@@ -30,5 +30,11 @@ createApp({
         onClick(clickedImg){
             this.currentIndex = clickedImg;
         }
+    },
+
+    mounted(){
+        setInterval(()=>{
+            this.nextImg()
+        }, 3000)
     }
 }).mount("#app");
