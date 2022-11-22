@@ -1,6 +1,6 @@
 const slides = [
-{
-    image: 'imgs/01.jpg',
+    {
+        image: 'imgs/01.jpg',
         title: 'Marvel\'s Spiderman Miles Morale',
         text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
     }, {

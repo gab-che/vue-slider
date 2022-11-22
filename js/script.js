@@ -5,7 +5,8 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
-            slides
+            slides,
+            currentIndex : 0,
         }
     },
 

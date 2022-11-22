@@ -5,8 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <title>Slider</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -17,14 +20,11 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img src="imgs/01.jpg" alt="Spiderman" />
+                    <img :src="slides[currentIndex].image"/>
                     <div class="text">
-                        <h3>Spiderman</h3>
+                        <h2>{{slides[currentIndex].title}}</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
-                            tempore aliquid deleniti aut
-                            veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
-                            corporis.
+                            {{slides[currentIndex].text}}
                         </p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="thumb active">
                         <img src="imgs/01.jpg" alt="Svezia" />
                     </div>
-                    <div class="thumb">
+                    <!-- <div class="thumb">
                         <img src="imgs/02.jpg" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="thumb">
                         <img src="imgs/05.jpg" alt="Avengers" />
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
