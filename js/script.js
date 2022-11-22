@@ -32,6 +32,12 @@ createApp({
             this.currentIndex = clickedImg;
         },
 
+        startTimer(){
+            this.timerId = setInterval(()=>{
+            this.nextImg()
+            }, 3000)
+        },
+
         stopTimer(){
             clearInterval(this.timerId)
         }
@@ -39,8 +45,6 @@ createApp({
     },
     
     mounted(){
-        this.timerId = setInterval(()=>{
-            this.nextImg()
-        }, 3000)
+        this.startTimer()
     }
 }).mount("#app");
