@@ -32,21 +32,11 @@
                 <div class="thumbs">
                     <div class="prev"></div>
                     <div class="next"></div>
-                    <div class="thumb active">
-                        <img src="imgs/01.jpg" alt="Svezia" />
+                    <div class="thumb" v-for="(slide, i) in slides"
+                        :class="(i === currentIndex) ? 'active': ''"
+                        :style="`height: calc(100% / ${slides.length})`">
+                        <img :src="slide.image".jpg"/>
                     </div>
-                    <!-- <div class="thumb">
-                        <img src="imgs/02.jpg" alt="Ratchet & Clank" />
-                    </div>
-                    <div class="thumb">
-                        <img src="imgs/03.jpg" alt="Fortnite" />
-                    </div>
-                    <div class="thumb">
-                        <img src="imgs/04.jpg" alt="Stray" />
-                    </div>
-                    <div class="thumb">
-                        <img src="imgs/05.jpg" alt="Avengers" />
-                    </div> -->
                 </div>
 
             </div>
