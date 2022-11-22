@@ -30,8 +30,8 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click="prevImg"></div>
+                    <div class="next" @click="nextImg"></div>
                     <div class="thumb" v-for="(slide, i) in slides"
                         :class="(i === currentIndex) ? 'active': ''"
                         :style="`height: calc(100% / ${slides.length})`">
