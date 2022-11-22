@@ -26,6 +26,10 @@
     filter: brightness(70%);
 }
 
+.item img:hover{
+    filter: brightness(100%);
+}
+
 .item .text {
     position: absolute;
     right: 20px;
