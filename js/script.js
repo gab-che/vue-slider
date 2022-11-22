@@ -25,6 +25,10 @@ createApp({
             } else{
                 this.currentIndex++;
             }
+        },
+
+        onClick(clickedImg){
+            this.currentIndex = clickedImg;
         }
     }
 }).mount("#app");

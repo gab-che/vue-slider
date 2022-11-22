@@ -42,7 +42,6 @@
 }
 
 .thumb {
-    /* height: calc((400px) / 5); */
     opacity: 0.5;
 }
 
@@ -55,6 +54,10 @@
 .thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
+}
+
+.thumb:hover{
+    cursor: pointer;
 }
 
 .prev, .next {
