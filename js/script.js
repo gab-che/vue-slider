@@ -7,6 +7,7 @@ createApp({
         return{
             slides,
             currentIndex : 0,
+            timerId: undefined
         }
     },
 
@@ -29,11 +30,16 @@ createApp({
 
         onClick(clickedImg){
             this.currentIndex = clickedImg;
-        }
-    },
+        },
 
+        stopTimer(){
+            clearInterval(this.timerId)
+        }
+
+    },
+    
     mounted(){
-        setInterval(()=>{
+        this.timerId = setInterval(()=>{
             this.nextImg()
         }, 3000)
     }
